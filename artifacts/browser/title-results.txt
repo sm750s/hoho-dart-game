@@ -1,0 +1,4 @@
+PASS home title
+PASS playing title
+PASS result title
+PASS PNG creation and renamed download

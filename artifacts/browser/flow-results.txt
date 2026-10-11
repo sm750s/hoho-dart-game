@@ -1,0 +1,9 @@
+PASS home selection is separate; Space cannot start aiming
+PASS three shots navigate to result; result blocks extra Space
+PASS replay keeps mode and speed; home cancels flight
+PASS mission result reward once; replay rewards new round; reload goes home
+PASS family explicit handoff and final summary; immediate replay retains settings
+PASS luck redraw per start, result badge separated from scores
+PASS mobile home, touch start, game and result fit 320px
+PASS treasure reset cancel prevents start and Space; reset stays home
+PASS no uncaught browser exceptions

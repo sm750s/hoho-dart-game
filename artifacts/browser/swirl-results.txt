@@ -1,0 +1,7 @@
+PASS swirl moves both axes; one Space locks actual score and repeated inputs cannot throw twice
+PASS replay retains swirl and flight restart/home cancels pending shots
+PASS swirl mission reward remains once per completed round
+PASS swirl family handoff blocks Space and next player keeps pattern
+PASS swirl mobile touch launches once; motion reduction and luck stay compatible
+PASS switch back to axes restores two-step aiming
+PASS no uncaught browser exceptions

@@ -1,0 +1,14 @@
+PASS initial render and button/Space, repeat blocking
+PASS restart cancels flight
+PASS three shots, completion, saved best, blocked extra inputs
+PASS mission award once and reload restoration
+PASS family setup blocking, individual speed, handoff and tie
+PASS treasure thresholds 2/3,4/5,7/8 and stored selections
+PASS reset cancel blocks aim; confirmed reset preserves best
+PASS luck highlight, fixed score, repeated hits one badge, score/star separation and redraw
+PASS mobile 320px, touch and reduced motion, mute toggle
+PASS family winner with unequal scores
+PASS mission failure and partial restart give no stars
+PASS best deletion preserves completed round and does not resave
+PASS storage denied still allows game completion
+PASS no uncaught browser exceptions

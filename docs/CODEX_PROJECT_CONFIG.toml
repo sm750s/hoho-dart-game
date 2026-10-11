@@ -1,0 +1,6 @@
+# .codex/config.toml로 복사하여 이 프로젝트에 적용합니다.
+sandbox_mode = "workspace-write"
+approval_policy = "on-request"
+
+[sandbox_workspace_write]
+network_access = true

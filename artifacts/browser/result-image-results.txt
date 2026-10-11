@@ -1,0 +1,6 @@
+PASS basic result PNG, download and no score changes
+PASS mission card with one reward, repeated save cannot duplicate stars
+PASS family card includes both players and long names without truncating scores
+PASS luck card badge and actual 30 points; score/stars unchanged
+PASS image failure notice and retry; game navigation remains usable
+PASS no uncaught browser exceptions
