@@ -58,9 +58,15 @@ test("회오리 한 번 입력은 좌표를 고정하며 비행 중 입력을 �
 test("회오리 난이도는 같은 경로의 속도를 바꾸고 새 발은 다른 출발 위치를 가진다", () => {
   const initial = createAim("swirl", () => 0.2);
   const fast = advanceAim(initial, 1000, "veryFast");
-  const easy = advanceAim(initial, 4000, "easy");
+  const easy = advanceAim(initial, 2800, "easy");
   assert.equal(fast.x, easy.x);
   assert.equal(fast.y, easy.y);
+  for (const [difficulty, multiplier] of [["easy", 1], ["normal", 1.3], ["fast", 1.8], ["veryFast", 2.8]] as const) {
+    const adjusted = advanceAim(initial, 1000, difficulty);
+    const baseline = advanceAim(initial, 1000 * multiplier, "easy");
+    assert.ok(Math.abs(adjusted.x - baseline.x) < 1e-9);
+    assert.ok(Math.abs(adjusted.y - baseline.y) < 1e-9);
+  }
   assert.notEqual(createAim("swirl", () => 0.7).x, initial.x);
 });
 

@@ -1,0 +1,5 @@
+PASS home order and normal default in every mode
+PASS difficulty and aim cards select exactly one; keyboard Space works
+PASS reset confirmation disables cards and cancel restores selection
+PASS family independent difficulty cards and mobile layout
+PASS no uncaught browser exceptions

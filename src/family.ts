@@ -20,7 +20,7 @@ export type FamilyAction =
 
 export const INITIAL_FAMILY_STATE: FamilyState = {
   players: [
-    { name: "", difficulty: "easy", game: INITIAL_GAME_STATE },
+    { name: "", difficulty: "normal", game: INITIAL_GAME_STATE },
     { name: "", difficulty: "normal", game: INITIAL_GAME_STATE },
   ],
   active: 0,

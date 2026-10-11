@@ -1,0 +1,10 @@
+{"difficulty":"easy","minSpeed":169.72207671239406,"centerSamples":8,"centerMinSpeed":385.76469408785186}
+PASS continuous rendered movement easy
+{"difficulty":"normal","minSpeed":217.29174743068174,"centerSamples":14,"centerMinSpeed":504.10401533903683}
+PASS continuous rendered movement normal
+{"difficulty":"fast","minSpeed":301.77130315697315,"centerSamples":13,"centerMinSpeed":690.013142060054}
+PASS continuous rendered movement fast
+{"difficulty":"veryFast","minSpeed":396.93017771099363,"centerSamples":9,"centerMinSpeed":1085.9095418117931}
+PASS continuous rendered movement veryFast
+PASS flight cancellation, duplicate input blocking, three-shot results
+PASS no uncaught browser exceptions

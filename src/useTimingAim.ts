@@ -13,7 +13,7 @@ type TimingOptions = {
 
 export function useTimingAim(options: TimingOptions) {
   const [aim, setAim] = useState(INITIAL_AIM);
-  const [difficulty, setDifficulty] = useState<Difficulty>("easy");
+  const [difficulty, setDifficulty] = useState<Difficulty>("normal");
   const aimRef = useRef(INITIAL_AIM);
   const optionsRef = useRef(options);
   const difficultyRef = useRef(difficulty);

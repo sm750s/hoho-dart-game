@@ -21,6 +21,10 @@ export const AIM_SPEED: Record<Difficulty, number> = {
   fast: 420,
   veryFast: 600,
 };
+// 회오리는 방향 변화가 많아 직선 조준보다 완만한 속도 간격을 사용합니다.
+export const SWIRL_SPEED_MULTIPLIER: Record<Difficulty, number> = {
+  easy: 1, normal: 1.3, fast: 1.8, veryFast: 2.8,
+};
 export const INITIAL_AIM: AimState = {
   phase: "horizontal", x: AIM_MIN, y: 200, direction: 1, flightProgress: 0,
 };
@@ -43,7 +47,7 @@ export function advanceAim(state: AimState, milliseconds: number, difficulty: Di
   }
 
   if (state.phase === "swirl") {
-    const time = (state.swirlTime ?? 0) + milliseconds / 1000 * AIM_SPEED[difficulty] / AIM_SPEED.easy;
+    const time = (state.swirlTime ?? 0) + milliseconds / 1000 * SWIRL_SPEED_MULTIPLIER[difficulty];
     const seed = state.swirlSeed ?? 0;
     // 중심으로 수축하는 대신 두 회전을 합칩니다. 주 회전의 최저 속도를
     // 보조 회전의 최고 속도보다 크게 유지해 중심에서도 움직임이 상쇄되지 않습니다.

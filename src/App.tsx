@@ -244,12 +244,12 @@ export default function App() {
             <label>미션 선택<select value={missionId} disabled={confirmReset} onChange={(event) => changeMission(event.target.value as MissionId)}>{MISSIONS.map((item) => <option key={item.id} value={item.id}>{item.name}</option>)}</select></label>
             <p>{mission.description}</p>
           </section>}
-          {mode === "family" ? <FamilyPanel state={family} disabled={confirmReset} onConfigure={dispatchFamily} onNext={nextPlayer} /> : <DifficultyCards value={difficulty} disabled={confirmReset} onChange={changeDifficulty} />}
           {mode === "luck" && <p className="mode-description">게임을 시작하면 이번 판의 행운 점수를 뽑아요. 점수와 별에 보너스는 없어요.</p>}
           <ChoiceCards<AimPattern> label="조준 방식" value={aimPattern} disabled={confirmReset} onChange={setAimPattern} options={[
             { value: "axes", label: AIM_PATTERN_LABELS.axes, description: "가로와 세로를 정해 두 번 눌러요." },
             { value: "swirl", label: AIM_PATTERN_LABELS.swirl, description: "움직이는 조준점을 보고 한 번 눌러요." },
           ]} />
+          {mode === "family" ? <FamilyPanel state={family} disabled={confirmReset} onConfigure={dispatchFamily} onNext={nextPlayer} /> : <DifficultyCards value={difficulty} disabled={confirmReset} onChange={changeDifficulty} />}
           <button type="button" className="primary-action start-button" disabled={confirmReset} onClick={startGame}>게임 시작</button>
           <details className="home-extras">
             <summary>보물 상자 · 모은 별 ★ {starRecord.stars}개</summary>
