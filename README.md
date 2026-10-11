@@ -14,6 +14,12 @@
 
 ## 실행
 
+공개 서비스: [호호가족의 다트 게임](https://hoho-dart-game.vercel.app/)
+
+배포 관리: [Vercel 프로젝트](https://vercel.com/sm750s/hoho-dart-game) · 소스: [GitHub 저장소](https://github.com/sm750s/hoho-dart-game) (`main`)
+
+2026-10-11 사용자 확인으로 Vercel 배포 완료를 기록했습니다. 공개 빌드의 `SITE_URL`은 `https://hoho-dart-game.vercel.app/`을 사용합니다.
+
 Node.js 22.12 이상이 필요합니다. 프로젝트 폴더에서 실행하세요.
 
 ```sh

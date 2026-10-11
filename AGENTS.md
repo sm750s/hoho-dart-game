@@ -1,5 +1,12 @@
 # Repository Guidelines
 
+## 배포 주소 — 2026-10-11
+
+- 사용자가 Vercel 배포 완료를 알려주었다. 프로젝트 관리 주소: https://vercel.com/sm750s/hoho-dart-game
+- 공개 서비스 주소: https://hoho-dart-game.vercel.app/
+- GitHub 저장소: https://github.com/sm750s/hoho-dart-game (기본 브랜치 `main`).
+- 이후 배포 내역 확인과 서비스 검증에는 위 주소를 사용한다. 공개 빌드의 `SITE_URL`은 `https://hoho-dart-game.vercel.app/`을 기준으로 설정한다. 이번 기록은 사용자 확인에 따른 것이며 배포 상태·환경 변수·공유 미리보기는 별도로 검증하지 않았다.
+
 ## GitHub 업로드 준비 — 2026-10-11
 
 - `.gitignore`에 로컬 환경 변수(예제는 포함), `.vercel/`, `.codex/`, 빌드 캐시·커버리지·도구 로그와 브라우저 중복 다운로드 제외를 추가했다. 배포 이미지·파비콘·lockfile·검증 보고서와 스크린샷은 포함한다.
