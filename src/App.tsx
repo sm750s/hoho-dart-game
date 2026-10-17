@@ -224,7 +224,8 @@ export default function App() {
   return (
     <main className={`workshop screen-${screen} theme-${cosmeticRecord.cosmetics.theme}`}>
       <header className="page-header">
-        <h1 aria-label="호호가족의 다트 게임">{screen === "home" ? <>호호가족의<br /><span>다트 게임</span></> : <span>호호가족의 다트 게임</span>}</h1>
+        {screen === "home" && <img className="home-logo" src={`${import.meta.env.BASE_URL}hoho_family_mini_games.png`} alt="호호가족의 미니 게임" width={2172} height={724} />}
+        <h1 aria-label="호호가족의 다트 게임"><span>호호가족의 다트 게임</span></h1>
         {screen === "home" && <p className="introduction">오늘은 어떤 도전을 해볼까요?</p>}
       </header>
       <ol className="screen-steps" aria-label="게임 진행 단계">

@@ -29,6 +29,18 @@ body {
   text-align: center;
 }
 
+.home-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.screen-home h1 {
+  font-size: clamp(20px, 5vw, 36px);
+  white-space: nowrap;
+}
+
 .eyebrow {
   display: flex;
   align-items: center;
