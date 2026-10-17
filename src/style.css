@@ -31,9 +31,10 @@ body {
 
 .home-logo {
   display: block;
-  width: 100%;
+  width: min(100%, calc(100vw - 72px), 560px);
   height: auto;
-  margin: 0 auto;
+  object-fit: contain;
+  margin: 0 auto 10px;
 }
 
 .screen-home h1 {
